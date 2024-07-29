@@ -1,0 +1,248 @@
+<html><head><base href="https://barbershop-elegance.com/%20cr%C3%A9er%20des%20pages%20ind%C3%A9pendante%20de%20la%20page%20d'acceuil%20pour%20les%20services,%20%C3%A0%20propos%20et%20contact/services.html/apropos.html/contact.html/index.html/services.html/index.html/services.html/apropos.html/contact.html/index.html/services.html/index.html/services.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services - Tom l'Artiste</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&family=Fredericka+the+Great&display=swap');
+
+    :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #8E7C55;
+        --light-color: #ecf0f1;
+        --dark-color: #34495e;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-color);
+        color: var(--dark-color);
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        margin: 0;
+    }
+
+    .scissors-logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 15px;
+        animation: snip 2s infinite;
+    }
+
+    @keyframes snip {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-20deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    nav {
+        background-color: var(--secondary-color);
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        color: var(--light-color);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .service-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .service-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .service-content {
+        padding: 1.5rem;
+    }
+
+    .service-content h3 {
+        font-family: 'Playfair Display', serif;
+        color: var(--secondary-color);
+        margin-top: 0;
+    }
+
+    .price {
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-top: 1rem;
+    }
+
+    .book-button {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: var(--light-color);
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .book-button:hover {
+        background-color: var(--primary-color);
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: var(--light-color);
+        text-align: center;
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Tom l'Artiste</h1>
+            <svg class="scissors-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+            </svg>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="apropos.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="Coupe classique" width="300" height="200">
+                <div class="service-content">
+                    <h3>Coupe Classique</h3>
+                    <p>Une coupe traditionnelle adaptée à votre style et à la forme de votre visage.</p>
+                    <p class="price">35€</p>
+                    <a href="contact.html" class="book-button">Réserver</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Taille de barbe" width="300" height="200">
+                <div class="service-content">
+                    <h3>Taille de Barbe</h3>
+                    <p>Sculptez votre barbe pour un look impeccable et soigné.</p>
+                    <p class="price">25€</p>
+                    <a href="contact.html" class="book-button">Réserver</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1634302086887-13b5585a8831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="Rasage traditionnel" width="300" height="200">
+                <div class="service-content">
+                    <h3>Rasage Traditionnel</h3>
+                    <p>Profitez d'un rasage à l'ancienne pour une peau douce et nette.</p>
+                    <p class="price">30€</p>
+                    <a href="contact.html" class="book-button">Réserver</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1583499871880-de841d1ace2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Coupe et coiffage" width="300" height="200">
+                <div class="service-content">
+                    <h3>Coupe et Coiffage</h3>
+                    <p>Une coupe suivie d'un coiffage parfait pour un look impeccable.</p>
+                    <p class="price">45€</p>
+                    <a href="contact.html" class="book-button">Réserver</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Coloration" width="300" height="200">
+                <div class="service-content">
+                    <h3>Coloration</h3>
+                    <p>Donnez une nouvelle vie à vos cheveux avec notre service de coloration.</p>
+                    <p class="price">50€</p>
+                    <a href="contact.html" class="book-button">Réserver</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80" alt="Soin du visage" width="300" height="200">
+                <div class="service-content">
+                    <h3>Soin du Visage</h3>
+                    <p>Un traitement facial relaxant pour une peau éclatante et rajeunie.</p>
+                    <p class="price">40€</p>
+                    <a href="contact.html" class="book-button">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tom l'Artiste. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
